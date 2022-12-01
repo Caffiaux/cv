@@ -1,9 +1,7 @@
 body {
   letter-spacing: -0.25rem;
   margin: 0px;
-}
-body{
-  background-image: none
+  background-color: #FFF0F5;
 }
 nav, body, footer {
   letter-spacing: normal;
@@ -39,16 +37,16 @@ h1 {
   text-align: center;
   color: #fc3d35;
   font-size: 50px;
-  font-family: Lucida, Times, serif;
+  font-family:'Arvo', serif;
   text-transform: uppercase;
 }
 h2{
   text-align: center;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Roboto', sans-serif;
 }
 h3{
-  font-family: Lucida, Times, serif;
+  font-family: 'Arvo', serif;
   color: #fc3d35;
   text-transform: uppercase;
 }
@@ -58,6 +56,15 @@ img {
 div{
   padding: 10px;
 }
+ #competences li, #loisirs p, .roboto, #cv{
+  font-family: 'Roboto', sans-serif;
+}
+#competences, #loisirs, #cv{
+  text-align: center;
+}
+.arvo{
+  font-family: 'Arvo', serif;
+}
 #experiences p, #formations p{
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,11 +72,9 @@ div{
 #coordonnees {
   text-align: center;
 }
-#cv {
-  text-align: center;
-}
 #cv a{
     text-decoration: none;
+    color: black;
 }
 #loisirs img, #cv img{
   vertical-align: middle;
@@ -80,15 +85,22 @@ footer {
 #fin{
   background-image: url("../img/carreaux.jpg");
   background-position: center;
-padding: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 @media screen and (min-width: 769px){
-  body {
+  /* body {
     padding: 150px;
     background-image: url("../img/carreaux2.png");
     background-size: 100%  100%
+  }*/
+  header {
+    background-image: url("../img/carreaux.jpg");
+    background-position: center;
+    padding: 50px;
   }
-  nav {
+  nav, button {
     display: none;
   }
   section {
@@ -102,14 +114,14 @@ padding: 50px;
     box-sizing: border-box;
     padding: 0;
   }
-  #competences, #loisirs {
+  #competences, #loisirs, #cv {
+    text-align: left;
     padding: 50px 150px;
   }
   #fin {
-    background: none;
-    padding: 0;
+    width: 100%
   }
-  footer{
+  /* footer{
     margin: 0;
-  }
+  } */
 }
