@@ -1,0 +1,97 @@
+body {
+  letter-spacing: -0.25rem;
+  margin: 0px;
+}
+body{
+  background-image: none
+}
+nav, body, footer {
+  letter-spacing: normal;
+}
+nav{
+  z-index: 99;
+  display: block;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-image: url("../img/carreaux.jpg");
+  background-position: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  padding: 15px;
+  width: calc(163%/5);
+  box-sizing: border-box;
+  text-align: center;
+}
+nav li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F08080;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  color: #fc3d35;
+  font-size: 50px;
+  font-family: Lucida, Times, serif;
+  text-transform: uppercase;
+}
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif
+}
+h3{
+  font-family: Lucida, Times, serif;
+  color: #fc3d35;
+  text-transform: uppercase;
+}
+img {
+  height: 50px
+}
+div{
+  padding: 10px;
+}
+#experiences p, #formations p{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#coordonnees {
+  text-align: center;
+}
+#cv {
+  text-align: center;
+}
+#cv a{
+    text-decoration: none;
+}
+@media screen and (min-width: 769px){
+  body {
+    padding: 150px;
+    background-image: url("../img/carreaux2.png");
+    background-size: 100%  100%
+  }
+  nav {
+    display: none;
+  }
+  section {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  body div{
+    width: calc(99%/2);
+    box-sizing: border-box;
+    padding: 0;
+  }
+  #competences, #loisirs {
+    padding: 50px 150px;
+  }
+}
