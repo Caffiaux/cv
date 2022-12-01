@@ -25,7 +25,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 15px;
-  width: calc(163%/5);
+  width: calc(98%/2);
   box-sizing: border-box;
   text-align: center;
 }
@@ -71,6 +71,17 @@ div{
 #cv a{
     text-decoration: none;
 }
+#loisirs img, #cv img{
+  vertical-align: middle;
+}
+footer {
+  margin: 30px 0;
+}
+#fin{
+  background-image: url("../img/carreaux.jpg");
+  background-position: center;
+padding: 50px;
+}
 @media screen and (min-width: 769px){
   body {
     padding: 150px;
@@ -93,5 +104,12 @@ div{
   }
   #competences, #loisirs {
     padding: 50px 150px;
+  }
+  #fin {
+    background: none;
+    padding: 0;
+  }
+  footer{
+    margin: 0;
   }
 }
