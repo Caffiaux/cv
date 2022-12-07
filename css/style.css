@@ -3,6 +3,7 @@ body {
   margin: 0px;
   background-color: #FFF0F5;
 }
+
 header {
   background-image: url("../img/carreaux.jpg");
   background-position: center;
@@ -46,9 +47,10 @@ nav li a{
   display: block;
   position: relative;
   top: 20px;
-  left: 20px;
+  padding-left: 20px;
   z-index: 1;
   user-select: none;
+  box-sizing: border-box;
 }
 #menuToggle a{
   transition: color 0.3s ease;
@@ -103,7 +105,7 @@ nav li a{
   position: absolute;
   height: 100vh;
   width: 100%;
-  margin: -100px 0 0 -50px;
+  /* margin: -100px 0 0 -50px; */
   padding: 230px 40px 0;
   background-color: rgba(255,255,255,0.5);
   backdrop-filter: blur(7px);
@@ -111,6 +113,7 @@ nav li a{
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  box-sizing: border-box;
 }
 #menuToggle input:checked ~ ul{
   transform: none;
@@ -138,6 +141,7 @@ img {
   height: 50px
 }
 div{
+  box-sizing: border-box;
   padding: 10px;
 }
 #competences li, #loisirs p, .roboto, #cv{
