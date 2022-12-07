@@ -6,7 +6,10 @@ body {
 header {
   background-image: url("../img/carreaux.jpg");
   background-position: center;
-  padding: 50px;
+  padding: 50px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 nav, body, footer {
   letter-spacing: normal;
@@ -26,7 +29,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 15px;
-  width: calc(98%/2);
+  width: calc(100%/1);
   box-sizing: border-box;
   text-align: center;
 }
@@ -36,14 +39,14 @@ nav li a{
   color: #fc3d35;
   padding: 10px;
   font-family: 'Arvo', serif;
-  background: rgba(0,0,0,.8);
+  font-weight: bold;
+  letter-spacing: 0.2em;
 }
-
 #menuToggle {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 20px;
+  left: 20px;
   z-index: 1;
   user-select: none;
 }
@@ -70,7 +73,7 @@ nav li a{
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #8f8f8f;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -98,30 +101,27 @@ nav li a{
 }
 #menu{
   position: absolute;
-  width: 300px;
+  height: 100vh;
+  width: 100%;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
+  padding: 230px 40px 0;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(7px);
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-#menu li{
-  padding: 10px 0;
-  /* font-size: 22px; */
-}
 #menuToggle input:checked ~ ul{
   transform: none;
 }
-
 h1 {
   text-align: center;
   color: #fc3d35;
   font-size: 50px;
   font-family:'Arvo', serif;
   text-transform: uppercase;
+  padding: 50px 0 0;
 }
 h2{
   text-align: center;
@@ -132,6 +132,7 @@ h3{
   font-family: 'Arvo', serif;
   color: #fc3d35;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 img {
   height: 50px
@@ -181,12 +182,15 @@ footer {
   display: block;
 }
 @media screen and (min-width: 769px){
-  /* body {
-    padding: 150px;
-    background-image: url("../img/carreaux2.png");
-    background-size: 100%  100%
-  }*/
-
+  header{
+    position: inherit;
+  }
+  h1{
+    padding: 0
+  }
+  #menuToggle{
+    display: none;
+  }
   nav li{
     display: none;
     width: calc(98%/7);
