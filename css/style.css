@@ -252,6 +252,9 @@ input:nth-of-type(5):checked ~ div#carousel {
     text-decoration: none;
     color: black;
 }
+#cv span{
+  font-size: 20px;
+}
 #loisirs img, #cv img{
   vertical-align: middle;
 }
